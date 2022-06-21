@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Rubik';
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --paleviolet:hsl(276, 100%, 81%);
+  --modviolet:hsl(276, 55%, 52%);
+  --desviolet:hsl(271, 15%, 43%);
+  --grayblue:hsl(206, 6%, 79%);
+  --verydesviolet:hsl(271, 36%, 24%);
+  --darkgreyviolet:hsl(270, 7%, 64%);
+  --gradient:hsl(264, 100%, 61%),hsl(293, 100%, 63%);
+  --lightgrayviolet:hsl(270, 20%, 96%);
+  --verylightmagenta:hsl(289, 100%, 72%);
+}
+
+body {
+  background-color: #f5f3f7;
+}
+
+body main .purple {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  border-radius: 0 0 1700px 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to right, #8838ff, #e942ff);
+}
+
+body main .app-view {
+  width: 83%;
+  margin: auto;
+  margin-top: 60px;
+  -webkit-box-shadow: 0px 8px 32px rgba(80, 73, 73, 0.336);
+          box-shadow: 0px 8px 32px rgba(80, 73, 73, 0.336);
+  border: 10px solid white;
+  border-radius: 40px 40px 40px 40px;
+}
+
+body main .app-view .head {
+  z-index: 1;
+  position: relative;
+}
+
+body main .app-view .head .whitespace {
+  width: 60%;
+  margin: auto;
+  background-color: white;
+  padding: 14px;
+  border-radius: 28px;
+  z-index: 1;
+  margin-top: -10px;
+  position: relative;
+}
+
+body main .app-view .head .contact-box {
+  margin-top: -17.46px;
+  padding: 35px 4% 15px 4%;
+  border-radius: 28px 28px 8px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8838ff), to(#e942ff));
+  background-image: linear-gradient(to right, #8838ff, #e942ff);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 3px solid rgba(125, 54, 231, 0.555);
+  -webkit-box-shadow: 0px 12px 4px rgba(80, 73, 73, 0.048);
+          box-shadow: 0px 12px 4px rgba(80, 73, 73, 0.048);
+  gap: 12px;
+}
+
+body main .app-view .head .contact-box .x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+}
+
+body main .app-view .head .contact-box .x .back {
+  width: 20px;
+}
+
+body main .app-view .head .contact-box .x .blck {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 7px;
+}
+
+body main .app-view .head .contact-box .x .blck .avatar {
+  width: 40px;
+  border-radius: 80px;
+  border: 2.7px solid white;
+}
+
+body main .app-view .head .contact-box .x .blck .person p {
+  color: white;
+  font-weight: 500;
+}
+
+body main .app-view .head .contact-box .x .blck .person small {
+  color: var(--paleviolet);
+}
+
+body main .app-view .head .contact-box .menu {
+  width: 20px;
+}
+
+body main .app-view .contents {
+  padding: 8% 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px;
+  border-radius: 0 0 28px 28px;
+  background-color: var(--lightgrayviolet);
+}
+
+body main .app-view .contents .text-1, body main .app-view .contents .text-2, body main .app-view .contents .text-5 {
+  background-color: rgba(216, 158, 255, 0.123);
+  width: 68%;
+  border-radius: 21px 21px 15px 7px;
+  padding: 3%;
+}
+
+body main .app-view .contents .text-1 small, body main .app-view .contents .text-2 small, body main .app-view .contents .text-5 small {
+  color: var(--modviolet);
+}
+
+body main .app-view .contents .dogs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 10px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body main .app-view .contents .dogs .d-1, body main .app-view .contents .dogs .d-2, body main .app-view .contents .dogs .d-3 {
+  width: 60px;
+  border-radius: 15px;
+}
+
+body main .app-view .contents .text-3, body main .app-view .contents .text-4 {
+  background-color: white;
+  padding: 3%;
+  border-radius: 21px 21px 7px 15px;
+  -webkit-box-shadow: 0px 12px 4px rgba(80, 73, 73, 0.048);
+          box-shadow: 0px 12px 4px rgba(80, 73, 73, 0.048);
+}
+
+body main .app-view .contents .text-3 {
+  width: 68%;
+  margin-left: 32%;
+}
+
+body main .app-view .contents .text-4 {
+  width: 45%;
+  margin-left: 55%;
+}
+
+body main .app-view .contents .block-a, body main .app-view .contents .block-b {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--lightgrayviolet);
+  width: 80%;
+  padding: 4%;
+  -webkit-box-shadow: 0px 12px 4px rgba(80, 73, 73, 0.048);
+          box-shadow: 0px 12px 4px rgba(80, 73, 73, 0.048);
+  border-radius: 21px 21px 15px 7px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background-image: linear-gradient(to right, #e942ff, #8838ff);
+}
+
+body main .app-view .contents .block-a .circle-x, body main .app-view .contents .block-b .circle-x {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+body main .app-view .contents .block-a .circle-x small, body main .app-view .contents .block-b .circle-x small {
+  font-weight: 500;
+}
+
+body main .app-view .contents .block-a .circle-x .circle-1, body main .app-view .contents .block-b .circle-x .circle-1 {
+  width: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 4px solid var(--verylightmagenta);
+}
+
+body main .app-view .contents .block-a .circle-y, body main .app-view .contents .block-b .circle-y {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+body main .app-view .contents .block-a .circle-y small, body main .app-view .contents .block-b .circle-y small {
+  font-weight: 500;
+}
+
+body main .app-view .contents .block-a .circle-y .circle-2, body main .app-view .contents .block-b .circle-y .circle-2 {
+  width: 10px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 4px solid var(--verylightmagenta);
+}
+
+body main .app-view .contents .text-space {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: white;
+  border-radius: 40px;
+  padding: 5px 4%;
+}
+
+body main .app-view .contents .text-space .texts small {
+  color: var(--grayblue);
+  font-weight: 500;
+}
+
+body main .app-view .contents .text-space .xx {
+  border-radius: 100%;
+  width: 17%;
+  padding: 5.7%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--verydesviolet);
+}
+
+body main .app-view .contents .text-space .xx .submit {
+  width: 10px;
+  margin: auto;
+  padding: 7%;
+  border-radius: 100%;
+}
+
+body main .bottom .z {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  padding: 0 12%;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+body main .bottom .z .sample {
+  font-size: 2.1rem;
+  line-height: 1.2em;
+  color: var(--verydesviolet);
+  font-weight: 700;
+}
+
+body main .bottom .z .stay {
+  padding-top: 20px;
+  line-height: 1.7em;
+  color: var(--darkgreyviolet);
+}
+
+body main .bottom .darkness {
+  margin-top: -250px;
+  width: 50%;
+  height: 100vh;
+  z-index: -1;
+  right: 0;
+  position: absolute;
+  background-color: rgba(214, 185, 233, 0.123);
+  border-radius: 1700px 0 0 0;
+  float: right;
+}
+
+@media screen and (min-width: 450px) {
+  body main .app-view {
+    width: 354.41px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  body main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 15%;
+  }
+  body main .top .purple {
+    width: 25%;
+    border-radius: 0 0 1700px 1700px;
+    left: -70px;
+  }
+  body main .bottom {
+    padding: unset;
+  }
+  body main .bottom .darkness {
+    margin-top: unset;
+    width: 25%;
+    border-radius: 1700px 1700px 0px 0px;
+    right: -70px;
+  }
+  body main .bottom .z {
+    padding: unset;
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=main.css.map */
